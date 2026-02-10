@@ -3,13 +3,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d3f4b44b-1e89-4cdf-bf1d-dea176169e57</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>stock</Name>
+    <Name>stocks</Name>
     <RootNamespace>stock</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -25,24 +26,24 @@
     <Compile Include="src\indicators\sma.py" />
     <Compile Include="src\indicators\__init__.py" />
     <Compile Include="main.py" />
-    <Compile Include="src\stock\general.py" />
-    <Compile Include="src\stock\__init__.py" />
+    <Compile Include="src\stocks\stock.py" />
+    <Compile Include="src\stocks\__init__.py" />
     <Compile Include="src\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="src\indicators\" />
     <Folder Include="src\indicators\__pycache__\" />
-    <Folder Include="src\stock\" />
-    <Folder Include="src\stock\__pycache__\" />
+    <Folder Include="src\stocks\" />
+    <Folder Include="src\stocks\__pycache__\" />
     <Folder Include="src\__pycache__\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="src\indicators\__pycache__\indicator.cpython-38.pyc" />
     <Content Include="src\indicators\__pycache__\sma.cpython-38.pyc" />
     <Content Include="src\indicators\__pycache__\__init__.cpython-38.pyc" />
-    <Content Include="src\stock\__pycache__\general.cpython-38.pyc" />
-    <Content Include="src\stock\__pycache__\__init__.cpython-38.pyc" />
+    <Content Include="src\stocks\__pycache__\general.cpython-38.pyc" />
+    <Content Include="src\stocks\__pycache__\__init__.cpython-38.pyc" />
     <Content Include="src\__pycache__\__init__.cpython-38.pyc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

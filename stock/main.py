@@ -1,7 +1,7 @@
 
 
 #from src.stock import set_stock_price 
-from src.stock.general import *
+from src.stocks.stock import *
 
 # NOTE 1: because __init__.py(indicators) already has "from .sma import SMA", 
 # so we dont have to write the full path "from src.indicators.sma import SMA"
