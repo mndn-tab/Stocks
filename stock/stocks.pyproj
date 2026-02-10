@@ -23,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="src\indicators\indicator.py" />
+    <Compile Include="src\indicators\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\indicators\sma.py" />
     <Compile Include="src\indicators\__init__.py" />
     <Compile Include="main.py" />
