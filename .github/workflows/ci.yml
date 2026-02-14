@@ -10,15 +10,14 @@ name: Python application
 
 on:
   push:
-    #branches: [ "master" ]
     branches:
     - master
-    - mndn-tab-patch-1
   pull_request:
-    branches: [ "master" ]
+    branches: 
+    - master
+  # add schedule to run at midnight UTC time
   schedule:
   - cron: '0 0 * * *'
-  - cron: '15 11 * * *'
 
 permissions:
   contents: read
