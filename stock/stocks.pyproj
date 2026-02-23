@@ -23,15 +23,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="src\indicators\indicator.py" />
-    <Compile Include="src\indicators\module1.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="src\indicators\sma.py" />
     <Compile Include="src\indicators\__init__.py" />
     <Compile Include="main.py" />
     <Compile Include="src\stocks\stock.py" />
     <Compile Include="src\stocks\__init__.py" />
     <Compile Include="src\__init__.py" />
+    <Compile Include="tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src\" />
@@ -40,8 +40,10 @@
     <Folder Include="src\stocks\" />
     <Folder Include="src\stocks\__pycache__\" />
     <Folder Include="src\__pycache__\" />
+    <Folder Include="tests\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.html" />
     <Content Include="src\indicators\__pycache__\indicator.cpython-38.pyc" />
     <Content Include="src\indicators\__pycache__\sma.cpython-38.pyc" />
     <Content Include="src\indicators\__pycache__\__init__.cpython-38.pyc" />
