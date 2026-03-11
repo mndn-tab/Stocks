@@ -1,0 +1,15 @@
+name: test download artifact
+
+on: push
+
+jobs:
+  Test:
+    name: Testing articat 📦
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/download-artifact@v5
+      with:
+        name: my-artifact
+    - name: Display structure of downloaded files
+      run: ls -R
