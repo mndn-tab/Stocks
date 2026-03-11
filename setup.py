@@ -29,7 +29,7 @@ no need of requirements.txt due to the setup.py dev option
 from setuptools import setup, find_packages
 
 setup(
-    name='stocks_mndn',
+    name='Stocks_App',
     version='0.3.0',
     packages=find_packages(),
     install_requires=["pandas>=1.2.4", "numpy>=1.20.1"
@@ -47,3 +47,4 @@ setup(
     ],
     python_requires='>=3.7',
 )
+
