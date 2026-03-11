@@ -1,4 +1,5 @@
-name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
+# Source : https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
+name: Publish Python 🐍 distribution 📦 to TestPyPI
 
 on: push
 
@@ -37,7 +38,7 @@ jobs:
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/<package-name>
+      url: https://test.pypi.org/p/stocks-mndn
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
