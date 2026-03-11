@@ -38,7 +38,7 @@ jobs:
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/stocks-mndn
+      url: https://test.pypi.org/p/Stocks_App
 
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
