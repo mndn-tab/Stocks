@@ -10,7 +10,6 @@ jobs:
     steps:
     - uses: actions/download-artifact@v5
       with:
-       name: python-package-distributions
-       path: dist/
+       artifact-ids: sha256:fc1e1d57f8c8a8cbee083f15e883e28916a79f06dd80cdb85dd5aed0b9e704e5
     - name: Display structure of downloaded files
       run: ls -R
