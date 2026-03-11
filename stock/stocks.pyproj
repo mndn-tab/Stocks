@@ -12,6 +12,7 @@
     <OutputPath>.</OutputPath>
     <Name>stocks</Name>
     <RootNamespace>stock</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\indicators\indicator.py" />
     <Compile Include="src\indicators\sma.py" />
     <Compile Include="src\indicators\__init__.py" />
@@ -44,12 +48,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.html" />
+    <Content Include="requirements.txt" />
     <Content Include="src\indicators\__pycache__\indicator.cpython-38.pyc" />
     <Content Include="src\indicators\__pycache__\sma.cpython-38.pyc" />
     <Content Include="src\indicators\__pycache__\__init__.cpython-38.pyc" />
     <Content Include="src\stocks\__pycache__\general.cpython-38.pyc" />
     <Content Include="src\stocks\__pycache__\__init__.cpython-38.pyc" />
     <Content Include="src\__pycache__\__init__.cpython-38.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
