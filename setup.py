@@ -30,7 +30,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Stocks_App',
-    version='0.3.0',
+    version='0.5.0',
     packages=find_packages(),
     install_requires=["pandas>=1.2.4", "numpy>=1.20.1"
     ],
@@ -47,4 +47,5 @@ setup(
     ],
     python_requires='>=3.7',
 )
+
 
