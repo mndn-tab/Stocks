@@ -18,7 +18,6 @@ in "Python Environment" tab, click "open in power shell"
 when prompted, enter:
 username = __token__
 password = <my TestPyPI API Token>
-         = pypi-AgENdGVzdC5weXBpLm9yZwIkZWEzNTE1YzItNDAzOC00NTJjLWFiMTYtODk5ZjdjZDY3ZDZjAAIqWzMsIjUwODM0NGU1LTQ2MDMtNDE3NC1iY2YxLWU1Zjc0NjYwOTQxYyJdAAAGIMoTO-D-T-wH1_MRF-fFMQcUxJhvJBjRY2zL5z9CExbL
 Finally, you can check your project at https://test.pypi.org/project/stocks-mndn/
 
 Notes:
@@ -32,7 +31,7 @@ setup(
     name='Stocks_App',
     version='0.6.0',
     packages=find_packages(), #Set packages to a list of all packages(have __init.py__) in your project
-    py_modules=["main"], #If your project contains any single-file Python modules that aren’t part of a package
+    # py_modules=["main"], #If your project contains any single-file Python modules that aren’t part of a package
     # package_data={'sample': ['package_data.dat'],}, # additional files to be installed into package, it is a dict {package name : a list of relative path names}
     install_requires=["pandas>=1.2.4", "numpy>=1.20.1"
     ],
