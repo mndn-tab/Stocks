@@ -13,6 +13,7 @@ in "Python Environment" tab, click "open in power shell"
 !pip install setuptools, twine, wheel (use powershell in the virtual env folder)
 !python setup.py bdist_wheel sdist (use powershell in the root folder, cause setup.py is in root folder
                                     this will create source dist as well as binary dist(wheel))
+! pip install . --target C:\... (use powershell in the root folder )
 !twine check dist/* (check the integrity of those distributions.) 
 !twine upload -r testpypi dist/* (upload it to test.pypi.org)
 when prompted, enter:
