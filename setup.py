@@ -30,7 +30,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Stocks_App',
-    version='0.7.0',
+    version='0.8.0',
     packages=find_packages(), #Set packages to a list of all packages(have __init.py__) in your project
     # py_modules=["main"], #If your project contains any single-file Python modules that aren’t part of a package
     # package_data={'sample': ['package_data.dat'],}, # additional files to be installed into package, it is a dict {package name : a list of relative path names}
