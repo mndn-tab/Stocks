@@ -338,3 +338,10 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# things to ignore due to setuptools
+build/
+dist/
+*.egg-info/
+*.egg
+env/
