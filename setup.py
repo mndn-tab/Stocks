@@ -31,8 +31,9 @@ from setuptools import setup, find_packages
 setup(
     name='Stocks_App',
     version='0.6.0',
-    packages=find_packages(),
-    py_modules=["main.py"]
+    packages=find_packages(), #Set packages to a list of all packages(have __init.py__) in your project
+    py_modules=["main.py"], #If your project contains any single-file Python modules that aren’t part of a package
+    # package_data={'sample': ['package_data.dat'],}, # additional files to be installed into package, it is a dict {package name : a list of relative path names}
     install_requires=["pandas>=1.2.4", "numpy>=1.20.1"
     ],
     author='mndn',
