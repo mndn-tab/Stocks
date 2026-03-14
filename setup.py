@@ -13,13 +13,13 @@ in "Python Environment" tab, click "open in power shell"
 !pip install setuptools, twine, wheel (use powershell in the virtual env folder)
 !python setup.py bdist_wheel sdist (use powershell in the root folder, cause setup.py is in root folder
                                     this will create source dist as well as binary dist(wheel))
-! pip install . --target C:\... (use powershell in the root folder )
+! pip install . --target C:\...\empty_folder (use powershell in the root folder )
 !twine check dist/* (check the integrity of those distributions.) 
 !twine upload -r testpypi dist/* (upload it to test.pypi.org)
 when prompted, enter:
 username = __token__
-password = <my TestPyPI API Token>
-Finally, you can check your project at https://test.pypi.org/project/stocks-mndn/
+password = <my TestPyPI API Token> # created .pypirc file in $HOME to store user and password
+Finally, you can check your project at https://test.pypi.org/project/stocks-app/
 
 Notes:
 update .gitignore to ignore build, dist and .egg-info files.
@@ -30,7 +30,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='stocks_app',
-    version='0.10.0',
+    version='0.11.0',
     packages=find_packages(), #Set packages to a list of all packages(have __init.py__) in your project
     # py_modules=["main"], #If your project contains any single-file Python modules that aren’t part of a package
     # package_data={'sample': ['package_data.dat'],}, # additional files to be installed into package, it is a dict {package name : a list of relative path names}
