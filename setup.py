@@ -7,7 +7,7 @@
     https://colab.research.google.com/drive/1RxCT59KNh6ldm2fVl4WN16vEdBkI1T0E
 
 
-Project explaination:
+Project explaination: (this is to deploy to testpypi, for pypi refer to sources above (it's similar)
 create virtual environment,
 in "Python Environment" tab, click "open in power shell"
 !pip install setuptools, twine, wheel (use powershell in the virtual env folder)
@@ -29,8 +29,8 @@ no need of requirements.txt due to the setup.py dev option
 from setuptools import setup, find_packages
 
 setup(
-    name='Stocks_App',
-    version='0.8.0',
+    name='stocks_app',
+    version='0.10.0',
     packages=find_packages(), #Set packages to a list of all packages(have __init.py__) in your project
     # py_modules=["main"], #If your project contains any single-file Python modules that aren’t part of a package
     # package_data={'sample': ['package_data.dat'],}, # additional files to be installed into package, it is a dict {package name : a list of relative path names}
