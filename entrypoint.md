@@ -18,10 +18,8 @@ This works because the package defines a **console script entry point**.
 
 ### this is equivalant to 
 
-
-`from my_project.cli import main `
-
-`main()`
+    from my_project.cli import main 
+    main()
 
 ---
 
@@ -29,9 +27,9 @@ This works because the package defines a **console script entry point**.
 
 `src/my_project/cli.py`
 
-def main():
 
-    print("App is running!")
+    def main():
+        print("App is running!")
 
 ---
 
